@@ -1,8 +1,24 @@
 aid: pawp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pawp.png
 name: Pawp
-description: 'Pawp is a company surfaced as a portfolio company of dcm-ventures, lux-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pawp is a veterinary telemedicine membership service that gives pet owners 24/7 access
+  to licensed veterinary professionals via text, video, and phone. For a flat annual membership, members
+  get unlimited on-demand consultations with vets, nurses, and technicians who each carry a minimum of
+  five years of clinical experience, along with personalized care plans and follow-up guidance for both
+  emergencies and routine questions. Pawp operates as a consumer mobile app (iOS and Android) with no
+  public developer API, SDK, or partner integration surface. It was surfaced as a portfolio company of
+  dcm-ventures and lux-capital and added to the API Evangelist network for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/pawp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Pets
+- Veterinary
+- Telemedicine
+- Telehealth
+- Health
+- Insurance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pawp-domain-security.yml
 - type: Website
   url: https://www.pawp.com/
+- type: Blog
+  url: https://www.pawp.com/blog/
+- type: Support
+  url: https://help.pawp.com/
+- type: HelpCenter
+  url: https://help.pawp.com/
+- type: SignUp
+  url: https://app.pawp.com/onboarding/
+- type: TermsOfService
+  url: https://www.pawp.com/tos/
+- type: PrivacyPolicy
+  url: https://www.pawp.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
